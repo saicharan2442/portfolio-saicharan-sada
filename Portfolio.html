@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saicharan_sada - Data Analyst Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e9ecef 0%, #dfe4ea 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 50px;
+            background: #34495e;
+            color: white;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        header .profile-info h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-weight: 700;
+        }
+        header .profile-info p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        header img:hover {
+            transform: scale(1.05);
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        .section h2 {
+            color: #34495e;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+            font-size: 1.1em;
+        }
+        .section ul li:before {
+            content: '✔';
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .skill-item {
+            background: #f1f3f5;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .skill-item:hover {
+            background: #3498db;
+            color: white;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #2980b9;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #34495e;
+            color: white;
+            border-radius: 15px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+            header img {
+                margin-top: 20px;
+                width: 120px;
+                height: 120px;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-info">
+                <h1>Saicharan Sada</h1>
+                <p>Data Analyst | Data Scientist | AI Enthusiast | <a href="https://ice.lol/saicharan-sada" target="_blank">BIO</a> </p>
+        
+                <p>
+                    <a href="mailto:saicharansada@gmail.com">saicharansada@gmail.com</a> | 
+                    +91 6300952442 | 
+                    <a href="https://www.linkedin.com/in/saicharan-sada" target="_blank">LinkedIn</a> | 
+                    Srikakulam, Andhra Pradesh
+                </p>
+            </div>
+            <img src="sada.jpg" alt="Saicharan Sada Profile Picture">
+        </header>
+
+        <div class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>B.Tech in Artificial Intelligence & Data Science</strong> - Miracle.edu, Vizianagaram (2021-2025) - 76%</li>
+                <li><strong>Intermediate (MPC)</strong> - Chakradhar Junior College, Srikakulam (2019-2021) - 80%</li>
+                <li><strong>SSC</strong> - Arunodaya Vidyalaya Samasta, Challavani Peta (2018-2019) - 9.7 GPA</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><strong>Languages:</strong> Python, MySQL, Java, AI, ML, DL</div>
+                <div class="skill-item"><strong>Frameworks:</strong> Numpy, Pandas, Matplotlib</div>
+                <div class="skill-item"><strong>Tools:</strong> MS PowerBI, Tableau, Excel, IBM SPSS, MS Office</div>
+                <div class="skill-item"><strong>Platforms:</strong> VS Code, Jupyter Notebook, IDLE, Colab</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Data Visualization</strong> - <a href="https://www.linkedin.com/posts/saicharan-sada_data-visualisation-activity-7289909771711717376-3CGs?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoeQBsB1ecBA-RvYX2EYZESuUDmn04-LQg" target="_blank">Tata | Forage</a><br>Empowering Business with Effective Insights: Framing business scenarios, choosing visuals, creating effective visuals, and communicating insights.</li>
+                <li><strong>Python Fullstack</strong> - <a href="https://www.linkedin.com/posts/saicharan-sada_python-full-stack-activity-7225106106279157761-LzqV?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoeQBsB1ecBA-RvYX2EYZESuUDmn04-LQg" target="_blank">ExcelR</a><br>Built end-to-end web applications using Flask/Django, RESTful APIs, and modern frontend frameworks with database integration and cloud deployment.</li>
+                <li><strong>AWS Cloud</strong> - <a href="https://www.linkedin.com/posts/saicharan-sada_sada-activity-7159972360744243200-L6_l?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoeQBsB1ecBA-RvYX2EYZESuUDmn04-LQg" target="_blank">Braino Vision</a><br>Managed cloud infrastructure with EC2, S3, and VPC for scalable, secure, and efficient deployments.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Heart Attack Prediction</strong><br>Developed a predictive analytics web app using Python and Flask with Logistic Regression (95% accuracy) and Random Forest (94% accuracy) models for real-time heart attack risk assessment. <a href="https://www.linkedin.com/posts/saicharan-sada_machinelearning-healthcareai-flask-activity-7290238610790850562-kZ67?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoeQBsB1ecBA-RvYX2EYZESuUDmn04-LQg" target="_blank">View Project</a></li>
+                <li><strong>College Department Website</strong><br>Created a Flask-based web app to manage student and study material databases with user-friendly features for resource access and uploads. <a href="https://www.linkedin.com/posts/saicharan-sada_sada-activity-7162173637335134208-JH4R?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoeQBsB1ecBA-RvYX2EYZESuUDmn04-LQg" target="_blank">View Project</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Certificates</h2>
+            <ul>
+                <li><a href="https://courses.edx.org/certificates/2be675edaad74e0d88bf7cdde675f054" target="_blank">Data Analytics Basics</a> - edX (Oct 2024)</li>
+                <li><a href="https://www.linkedin.com/posts/saicharan-sada_introduction-to-data-science-activity-7286984024617623552-cbTH?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoeQBsB1ecBA-RvYX2EYZESuUDmn04-LQg" target="_blank">Introduction to Data Science</a> - Cisco (Jan 2025)</li>
+                <li><a href="https://www.linkedin.com/posts/saicharan-sada_data-science-analytics-activity-7172147898120359936-NzPX?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoeQBsB1ecBA-RvYX2EYZESuUDmn04-LQg" target="_blank">Data Science & Analytics</a> - HP Foundation (Jan 2025)</li>
+                <li><a href="https://www.linkedin.com/posts/saicharan-sada_ibm-spss-certification-in-data-analysis-activity-7257259584229122048-IVGu?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoeQBsB1ecBA-RvYX2EYZESuUDmn04-LQg" target="_blank">IBM SPSS</a> - IBM (Jan 2025)</li>
+                <li><a href="https://courses.cognitiveclass.ai/certificates/2b2ad35aff164814800f6415da03116c" target="_blank">Prompt Engineering</a> - Cognitive Class.AI (Jan 2025)</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Badges</h2>
+            <ul>
+                <li><a href="https://www.credly.com/badges/f14cb511-034b-46cd-823b-9bf93d57df38/linked_in_profile" target="_blank">Data Analytics Essentials</a> - edX (October 2024)</li>
+                <li><a href="https://www.credly.com/badges/18092974-80fe-4b66-a748-96018e3217cc/linked_in?t=sqean9" target="_blank">Introduction to Data Science</a> - Cisco (January 2025)</li>
+                <li><a href="https://www.linkedin.com/posts/saicharan-sada_introduction-to-generative-ai-google-cloud-activity-7299450793521295360-zhzh?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoeQBsB1ecBA-RvYX2EYZESuUDmn04-LQg" target="_blank">Introduction to Generative AI</a> - Google (February 2025)</li>
+                <li><a href="https://www.linkedin.com/posts/saicharan-sada_introduction-to-responsible-ai-google-cloud-activity-7299452675325050880-zUzI?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoeQBsB1ecBA-RvYX2EYZESuUDmn04-LQg" target="_blank">Introduction to Responsible AI</a> - Google (February 2025)</li>
+                <li><a href="https://www.linkedin.com/posts/saicharan-sada_introduction-to-large-language-models-google-activity-7299451777593090048-SMDD?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoeQBsB1ecBA-RvYX2EYZESuUDmn04-LQg" target="_blank">Introduction to Large Language Models</a> - Google (February 2025)</li>
+            </ul>
+        </div>
+        <footer>
+            <p>© 2025 Saicharan Sada | Crafted with Passion for Data-Driven Excellence</p>
+            <p><a href="https://github.com/saicharan2442" target="_blank"> <b>GitHub</b></a> | 
+                <a href="https://x.com/SadaSaicharan" target="_blank"><b>X.com</b></a></p>
+        </footer>
+    </div>
+</body>
+</html>
